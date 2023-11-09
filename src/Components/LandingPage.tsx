@@ -22,8 +22,8 @@ export const LandingPage=()=>{
             Your browser does not support the video tag.
             </video>
             <div className="landing-page-content">
-                <div className='landing-page-title'>MilaCast</div>
-                <div className="d-flex align-items-center justify-content-center">
+                <div className='landing-page-title d-flex justify-content-center'>MilaCast</div>
+                <div className="input-wrapper">
                     <input className='landing-search-input' onKeyDown={(event)=>handleKeyPress(event)} placeholder="Enter a city to get the weather forecast" type="search" onChange={(location)=>setCity(location.target.value)}/>
                     <button className='landing-search-button' onClick={()=> handlePageNav()}> Search</button>
             </div>
